@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Portfolio</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header, button {
+            background-color: #ffcc00;
+            padding: 10px;
+            text-align: center;
+        }
+
+        button {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+        }
+
+        nav {
+            background-color: #ffc966;
+            padding: 10px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .col {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: #4d4d4d;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Discover the Beauty Through the Lens</h1>
+        <button>Sign In</button>
+        <button>Sign Up</button>
+    </header>
+
+    <nav>
+        <a href="#">Portraits</a>
+        <a href="#">Landscape</a>
+        <a href="#">Events</a>
+    </nav>
+
+    <div class="container">
+        <div class="col">
+            <h2>Portraits</h2>
+            <img src="portrait1.jpg" alt="Portrait 1">
+            <p>Capturing the essence of individuals through striking portraits.</p>
+        </div>
+        <div class="col">
+            <h2>Landscape</h2>
+            <img src="landscape1.jpg" alt="Landscape 1">
+            <p>Exploring the beauty of nature and scenic landscapes.</p>
+        </div>
+        <div class="col">
+            <h2>Events</h2>
+            <img src="event1.jpg" alt="Event 1">
+            <p>Documenting special moments and events with artistic flair.</p>
+        </div>
+    </div>
+</body>
+</html>
